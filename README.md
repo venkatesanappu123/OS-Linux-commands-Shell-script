@@ -262,85 +262,105 @@ cat > file23
 1004 | Sit |  7000 | Dev
 1003 | Joe |  7000 | Developer
 1001 | Ram | 10000 | HR
-^d
 ```
 
 
 sed -n -e '3p' file23
 ## OUTPUT
+![Screenshot 2025-04-07 083534](https://github.com/user-attachments/assets/406e9ce5-5ba8-47ed-b99f-03220fb3ab1e)
 
 
 
 sed -n -e '$p' file23
 ## OUTPUT
+![Screenshot 2025-04-07 083633](https://github.com/user-attachments/assets/c8598db1-61b8-413e-b5e7-2a9fc36b067b)
+
 
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
+![Screenshot 2025-04-07 083809](https://github.com/user-attachments/assets/d9e3808b-da58-4301-8675-d34e93e889a3)
+
 
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
+![Screenshot 2025-04-07 084016](https://github.com/user-attachments/assets/e382e631-5b3e-433c-9c27-aa2a9b171eed)
+
 
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
+![Screenshot 2025-04-07 084358](https://github.com/user-attachments/assets/a2cb395c-73ce-4bfe-810c-f04b54382698)
 
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
+![Screenshot 2025-04-07 084719](https://github.com/user-attachments/assets/5ae6361b-5d11-4828-80a9-97c489103a67)
 
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
+![Screenshot 2025-04-07 085032](https://github.com/user-attachments/assets/91362ef1-bab3-4bbe-862a-38c9b4afa16f)
 
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
+![Screenshot 2025-04-07 085349](https://github.com/user-attachments/assets/33f31b9b-13e5-4e83-8bd8-2ddeb5e88e5e)
+
 
 
 
 seq 10 
 ## OUTPUT
+![Screenshot 2025-04-07 085435](https://github.com/user-attachments/assets/7405e6aa-2cb2-4c37-83b3-63ebb25fc187)
 
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
+![Screenshot 2025-04-07 085543](https://github.com/user-attachments/assets/b8381808-0889-43c2-a547-b8e78aede636)
 
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
+![Screenshot 2025-04-07 085856](https://github.com/user-attachments/assets/56d217c9-71c0-4a90-807a-cecd71a4ea26)
 
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
+![Screenshot 2025-04-07 090030](https://github.com/user-attachments/assets/da0c093f-f9cf-4096-8516-59227b031004)
 
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
+![Screenshot 2025-04-07 090138](https://github.com/user-attachments/assets/b61f97d1-9397-478c-b481-d1d10b1e8f84)
+
 
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
+![Screenshot 2025-04-07 090405](https://github.com/user-attachments/assets/15a2aeb8-7665-463c-8994-a40b3451a58b)
 
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
+![Screenshot 2025-04-07 090529](https://github.com/user-attachments/assets/12b3d37d-03a0-412a-aab6-e1497e86536a)
 
 
 
 sed -n '2,4{s/$/*/;p}' file23
+![Screenshot 2025-04-07 090925](https://github.com/user-attachments/assets/6c64c8d2-63e1-4c5a-886c-a12e0c575448)
 
 
 #Sorting File content
@@ -354,6 +374,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
+![Screenshot 2025-04-07 091340](https://github.com/user-attachments/assets/c57f5c47-ef51-4843-9fc2-142b55e1601a)
 
 
 cat > file22
@@ -367,6 +388,7 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
+![Screenshot 2025-04-07 092013](https://github.com/user-attachments/assets/0bc4ac82-73c8-4642-8e38-4992c3f47d10)
 
 
 
@@ -374,6 +396,7 @@ uniq file22
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+![Screenshot 2025-04-07 092607](https://github.com/user-attachments/assets/2be721a1-90ab-4f0a-b4be-f6e16ab298b1)
 
 cat < urllist.txt
 ```
@@ -390,6 +413,7 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
+![Screenshot 2025-04-07 093021](https://github.com/user-attachments/assets/f7f7b053-379f-4afa-8910-a592b3fc5b6c)
 
 
  
