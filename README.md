@@ -53,7 +53,7 @@ cmp file1 file2
 ## OUTPUT
 ![alt text](3.png)
 comm file1 file2
- ## OUTPUT
+## OUTPUT
 ![alt text](4.png)
  
 diff file1 file2
@@ -141,16 +141,6 @@ grep -R ubuntu /etc
 grep -w -n world newfile   
 ## OUTPUT
 ![alt text](15.png)
-
-cat < newfile 
-```
-Hello world
-hello world
-Linux is world number 1
-Unix is predecessor
-Linux is best in this World
-^d
-```
 
 cat > newfile
 ```
