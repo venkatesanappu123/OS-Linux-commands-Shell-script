@@ -52,6 +52,7 @@ cat < file2
 cmp file1 file2
 ## OUTPUT
 ![alt text](3.png)
+
 comm file1 file2
 ## OUTPUT
 ![alt text](4.png)
